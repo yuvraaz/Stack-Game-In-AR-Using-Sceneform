@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_margin="16dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_horizontal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_margin="8dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_margin="16dp"
+            android:text="Difficulty: "
+            android:textColor="#ffffff"
+            android:fontFamily="serif-monospace"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:checked="true"
+                android:buttonTint="#ffffff"
+                android:fontFamily="serif-monospace"
+                android:text="  Hard"
+                android:id="@+id/hard"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:id="@+id/medium"
+                android:buttonTint="#ffffff"
+                android:fontFamily="serif-monospace"
+                android:text="  Medium"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:buttonTint="#ffffff"
+                android:id="@+id/easy"
+                android:fontFamily="serif-monospace"
+                android:text="  Easy"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Recording Quality: "
+            android:textSize="24sp"
+            android:layout_margin="16dp"
+            android:textColor="#ffffff"
+            android:fontFamily="serif-monospace"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:buttonTint="#ffffff"
+                android:fontFamily="serif-monospace"
+                android:text="  Quality HIGH"
+                android:id="@+id/qualityHigh"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:buttonTint="#ffffff"
+                android:id="@+id/twoK"
+                android:fontFamily="serif-monospace"
+                android:text="  2160p"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:buttonTint="#ffffff"
+                android:id="@+id/fullHD"
+                android:fontFamily="serif-monospace"
+                android:text="  1080p"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:id="@+id/HD"
+                android:buttonTint="#ffffff"
+                android:fontFamily="serif-monospace"
+                android:text="  720p"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:id="@+id/qualityMedium"
+                android:textSize="18sp"
+                android:buttonTint="#ffffff"
+                android:fontFamily="serif-monospace"
+                android:text="  480p"/>
+
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:textSize="15sp"
+            android:id="@+id/close"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+            android:text="Close"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</ScrollView>

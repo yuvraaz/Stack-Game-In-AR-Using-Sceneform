@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HIGH SCORES"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/noUseTitle"
+        android:textColor="#ffffff"
+        android:fontFamily="serif-monospace"/>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/scoreboard"
+        android:id="@+id/noUserImageView"
+        android:tint="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:layout_below="@id/noUseTitle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/noUserImageView"
+        android:layout_margin="8dp"
+        android:id="@+id/line"
+        android:background="#ffffff" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/scoresList"
+        android:layout_above="@id/close"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/line"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:textSize="15sp"
+        android:id="@+id/close"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:text="Close"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

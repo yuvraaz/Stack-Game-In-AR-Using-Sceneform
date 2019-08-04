@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/backgroundLayout"
+    android:background="@drawable/default_gradient">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/diamondTextLayout">
+
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@null"
+            android:src="@drawable/diamond"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:id="@+id/diamondText"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stack AR"
+        android:textSize="72sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:layout_below="@id/diamondTextLayout"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:fontFamily="serif-monospace"/>
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_centerInParent="true"
+        android:tint="#ffffff"
+        android:contentDescription="@null"
+        android:id="@+id/playButton"
+        android:src="@drawable/ic_play_arrow_black_24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:layout_weight="0.5"
+            android:id="@+id/volumeControl"
+            android:tint="#ffffff"
+            android:src="@drawable/ic_volume_up_black_24dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:contentDescription="@null"
+            android:id="@+id/scoreboard"
+            android:src="@drawable/scoreboard"
+            android:tint="#ffffff"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:layout_weight="0.5"
+            android:padding="4dp"
+            android:id="@+id/settings"
+            android:tint="#ffffff"
+            android:src="@drawable/ic_settings_black_24dp"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:padding="4dp"
+            android:layout_weight="0.5"
+            android:id="@+id/share"
+            android:tint="#ffffff"
+            android:src="@drawable/ic_share_black_24dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

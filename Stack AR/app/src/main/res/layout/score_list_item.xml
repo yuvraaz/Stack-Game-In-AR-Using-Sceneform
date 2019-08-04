@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:layout_margin="8dp"
+        android:textColor="#ffffff"
+        android:fontFamily="serif-monospace"
+        android:text="1. "
+        android:id="@+id/rank"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="132"
+        android:textSize="32sp"
+        android:fontFamily="serif-monospace"
+        android:textColor="#ffffff"
+        android:id="@+id/score"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/rank"
+        android:layout_margin="8dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you sure you want to restart the game?"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:id="@+id/uselessInfo"
+            android:gravity="center_horizontal"
+            android:fontFamily="serif-monospace"
+            android:layout_margin="24sp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_below="@id/uselessInfo"
+            android:textStyle="bold"
+            android:layout_toStartOf="@id/yes"
+            android:layout_marginEnd="32sp"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:id="@+id/no"
+            android:fontFamily="serif-monospace"
+            android:text="NO"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="YES"
+            android:layout_below="@id/uselessInfo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:id="@+id/yes"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:fontFamily="serif-monospace"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
